@@ -34,6 +34,7 @@ Bundler
 |The user inputs a word and is displayed on the success page|test|test|
 the user inputs a word and gets its id
 the prgram saves the word to an array and can clear it
+the programs finds a word based of its id
 
 
 ## Contact / Support
