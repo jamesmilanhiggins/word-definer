@@ -1,9 +1,10 @@
 class Word
-  attr_accessor(:word, :id)
   @@words = []
+  attr_accessor(:word, :definitions, :id)
 
   def initialize (attributes)
     @word = attributes.fetch(:word)
+    @definitions = []
     @id = @@words.length + 1
   end
 
@@ -19,7 +20,11 @@ class Word
     @@words = []
   end
 
-  def Word.find(identification)
+  def add_definition (definition)
+    @definitions.push(definition)
+  end
+
+  def Word.find (identification)
     found_word = nil
     @@words.each do |word|
       if word.id == identification
@@ -27,5 +32,12 @@ class Word
       end
     end
     found_word
+  end
 end
-end
+
+
+
+#
+# def add_definition (definition)
+#   @definitions.push(definition)
+# end
