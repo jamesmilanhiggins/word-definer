@@ -18,3 +18,7 @@ post('/') do
   @words = Word.all
   erb(:index)
 end
+
+get('/word/new') do
+  erb(:word_form)
+end
