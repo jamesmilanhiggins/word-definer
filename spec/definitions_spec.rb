@@ -25,22 +25,3 @@ describe(Definition) do
     end
   end
 end
-
-# describe("#initialize") do
-#   it("returns the definition") do
-#     test_definition = Definition.new("test definition")
-#     expect(test_definition.definition).to(eq("test definition"))
-#   end
-# end
-
-
-#
-# describe(Definition) do
-#   describe("#definition") do
-#     it ("returns the definition that is inputted for the word") do
-#       test_word = Word.new({:word => "test"})
-#       test_definition = Definition.new({:definition => "test inputted text"})
-#       expect(test_definition.define).to(eq("test inputted text"))
-#     end
-#   end
-# end
