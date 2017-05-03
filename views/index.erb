@@ -1,11 +1,11 @@
 <h2>The Dictionary</h2>
 <h3>Add a word</h3>
 
-<% if @@words.any?() %>
+<% if @words.any?() %>
   <h3>Click on a word to see its definitions:</h3>
 
 <ul>
-  <% @@words.each do |word| %>
+  <% @words.each do |word| %>
   <li><a href="/word/<%= word.id() %>"><%= word.word() %></a></li>
   <%end%>
 </ul>
@@ -13,32 +13,3 @@
 <% else %>
   <p>There are no lists yet!</p>
 <% end %>
-
-
-
-<!--
-<h1>Your Current Lists</h1>
-
-<% if @lists.any?() %>
-  <h3>Click on a list to see its tasks:</h3>
-
-  <ul>
-    <% @lists.each() do |list| %>
-      <li><a href="/lists/<%= list.id()%>"><%= list.name() %></a></li>
-    <% end %>
-  </ul>
-
-<% else %>
-  <p>There are no lists yet!</p>
-<% end %> -->
-
-
-
-<!--
-<form action="/" method="post">
-  <label for="word">Your Word</label>
-  <input type="text" name="word" >
-  <button type="submit" name="button"></button>
-</form>
-
-<a href="/word/new">Click to add a new word</a> -->
