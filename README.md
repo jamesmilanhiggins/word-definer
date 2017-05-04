@@ -14,7 +14,7 @@ Bundler
 ### Installing
 * Clone repository from github
 * Using the terminal,  navigate to the file directory and run ruby app.rb
-* view live site here
+* view live site here (https://boiling-escarpment-14408.herokuapp.com/)
 
 
 
