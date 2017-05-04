@@ -1,6 +1,6 @@
 <h1>Add A Definition</h1>
 
-<form action="/definition/new" method="post">
+<form action="/word/<%= @word.id() %>/definition/new" method="post">
   <input type="text" name="definition" id="definition" placeholder="please enter a definition">
   <button type="submit">click to add a new definition</button>
 </form>

@@ -1,0 +1,15 @@
+<%= @word.word %>
+
+
+<ul>
+  <% @word.definitions.each do |definition| %>
+  <li><%= definition %></li>
+
+  <%end%>
+</ul>
+
+
+
+<a href="<%= @word.id() %>/definition/new"><%= 'add new definition' %></a>
+<br>
+<a href="/"><%= 'home' %></a>
