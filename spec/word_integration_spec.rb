@@ -11,6 +11,7 @@ describe("the index page path", {:type => :feature}) do
     expect(page).to have_content("Dictionary")
   end
 end
+
 describe("the index page path to click add word", {:type => :feature}) do
   it("navigates to add word page") do
     visit("/")
@@ -18,6 +19,7 @@ describe("the index page path to click add word", {:type => :feature}) do
     expect(page).to have_content("click to add a new word")
   end
 end
+
 describe("the index page path to click add word", {:type => :feature}) do
   it("navigates to add word page") do
     visit("/")
@@ -27,6 +29,7 @@ describe("the index page path to click add word", {:type => :feature}) do
     expect(page).to have_content("test")
   end
 end
+
 describe("the index page path to click add word", {:type => :feature}) do
   it("navigates to add word page") do
     visit("/")

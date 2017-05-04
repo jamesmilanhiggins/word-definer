@@ -1,6 +1,9 @@
+
+<h2>Your word:</h2>
+
 <%= @word.word %>
 
-
+<h2>Your definition:</h2>
 <ul>
   <% @word.definitions.each do |definition| %>
   <li><%= definition %></li>
@@ -12,4 +15,7 @@
 
 <a href="<%= @word.id() %>/definition/new"><%= 'add new definition' %></a>
 <br>
+<br>
+<br>
+
 <a href="/"><%= 'home' %></a>

@@ -34,10 +34,3 @@ class Word
     found_word
   end
 end
-
-
-
-#
-# def add_definition (definition)
-#   @definitions.push(definition)
-# end

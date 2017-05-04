@@ -43,6 +43,7 @@ describe(Word) do
       expect(Word.all).to(eq([]))
     end
   end
+
   describe(".find") do
     it("finds a word based of its id") do
       test_word = Word.new({:word => "test"})
@@ -66,14 +67,4 @@ describe(Word) do
     end
   end
 end
-  #
-
-
-# describe(Definition) do
-#   describe("#initialize") do
-#     it("returns the definition") do
-#       test_definition = Definition.new({:definition => "test definition" })
-#       expect(test_definition.definition()).to(eq("test definition"))
-#     end
-#   end
-# end
+  
