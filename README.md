@@ -13,8 +13,9 @@ Bundler
 
 ### Installing
 * Clone repository from github
-* Using the terminal, navigate to the file directory
-* view live site here ....
+* Using the terminal,  navigate to the file directory and run ruby app.rb
+* view live site here
+
 
 
 
@@ -31,9 +32,10 @@ Bundler
 
 | behavior |  input   |  output  |
 |----------|:--------:|:--------:|
-|The user inputs a word and is displayed on the success page|test|test|
-the user inputs a word and gets its id
-the prgram saves the word to an array and can clear it
+|The program allows users to input a word and displays it|test|test|
+|The program allows users to input multiple words and it displays|test2|test2|
+|the program allows users to click into the word and add a definition| na| na|
+|The program allows users to input multiple definitions for one word|na|na|the prgram saves the word to an array and can clear it
 the programs finds a word based of its id
 
 
@@ -49,4 +51,4 @@ the programs finds a word based of its id
 
 ## License
 
-Copyright © 2017 James Higgins
+MIT, Copyright © 2017 James Higgins
