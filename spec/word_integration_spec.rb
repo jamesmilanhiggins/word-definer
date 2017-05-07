@@ -30,17 +30,17 @@ describe("the index page path to click add word", {:type => :feature}) do
   end
 end
 
-describe("the index page path to click add word", {:type => :feature}) do
-  it("navigates to add word page") do
-    visit("/")
-    click_on('add new word')
-    fill_in('word', :with => "money")
-    click_button('click to add a new word')
-    click_link('money')
-    click_on('add new definition')
-    fill_in('definition', :with => "money definition")
-    click_button('click to add a new definition')
-    click_on('money')
-    expect(page).to have_content("money definition")
-  end
-end
+# describe("the index page path to click add word", {:type => :feature}) do
+#   it("navigates to add word page") do
+#     visit("/")
+#     click_on('add new word')
+#     fill_in('word', :with => "money")
+#     click_button('click to add a new word')
+#     click_link('money')
+#     click_on('add new definition')
+#     fill_in('definition', :with => "money definition")
+#     click_button('click to add a new definition')
+#     click_on('money')
+#     expect(page).to have_content("money definition")
+#   end
+# end
