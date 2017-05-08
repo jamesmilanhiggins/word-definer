@@ -37,11 +37,9 @@ get('/word/:id/definition/new') do
 end
 
 post('/word/:id/definition/new') do
-  # definition = params.fetch("definition")
-  # attributes = {:definition => definition}
-  # @definition = Definition.new(attributes)
+  definition = Definition.new(params.fetch("definition"))
   @word = Word.find(params[:id].to_i)
-  @word.add_definition(Definition.new({:definition => definition}))
+  @word.add_definition(definition)
   @words = Word.all
   erb(:index)
 end
